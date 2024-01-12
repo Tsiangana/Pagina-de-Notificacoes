@@ -47,6 +47,13 @@
         padding: 10px 6px 0px;
     }
 
+    @media (max-width: 550px) {
+        .container .content{
+            width: 100%;
+            height: 100vh;
+        }
+    }
+
     .container .content header{
         display: flex;
         align-items: center;
@@ -82,6 +89,70 @@
         color: var(--Grayish_blue);
         cursor: pointer;
     }
+
     .container .content header p:hover{
         color: var(--Blue);
     }
+
+    .container .content main{
+        width: 100%;
+        height: auto;
+        /*border: 1px solid #000;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .content .msm{
+        width: 95%;
+        height: auto;
+        /*border: 1px solid red;*/
+    }
+
+    /* O background do js de lido ou nao será aplicado sobre essa classe*/
+    .container .content .msm .mensagem{
+        /*width: 100%;*/
+        height: 55px;
+        border-radius: 5px;
+        /*border: 1px solid #000;*/
+        margin: 5px 0;
+        background: var(--Very_light_grayish_blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5px;
+    }
+
+    .container .content .msm .mensagem img{
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .container .content .msm .mensagem .text p:first-child{
+        font-size: 12px;
+        margin-top: 1px;
+    }
+    .container .content .msm .mensagem .text p:first-child span:nth-child(1){
+        color: #000;
+        font-weight: 600;
+    }
+    .container .content .msm .mensagem .text p:first-child span:nth-child(2){
+        color: var(--Grayish_blue);
+    }
+    .container .content .msm .mensagem .text p:first-child span:nth-child(3){
+        color: var(--Dark_grayish_blue);
+        font-weight: 600;
+    }
+    .container .content .msm .mensagem .text p:first-child i{
+        color: var(--Red);
+        font-size: 20px;
+        margin-left: -5px;
+        padding-top: 15px;
+    }
+
+    .container .content .msm .mensagem .text p:last-child{
+        font-size: 11px;
+        color: var(--Grayish_blue);
+        margin-top: -10px;
+    }
+    
