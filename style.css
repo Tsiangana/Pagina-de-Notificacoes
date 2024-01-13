@@ -119,8 +119,14 @@
         background: var(--Very_light_grayish_blue);
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         padding: 0 5px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    .container .content .msm .mensagem:hover{
+        background: var(--Light_grayish_blue_1);
     }
 
     .container .content .msm .mensagem img{
@@ -135,7 +141,13 @@
     .container .content .msm .mensagem .text p:first-child span:nth-child(1){
         color: #000;
         font-weight: 600;
+        cursor: pointer;
     }
+
+    .container .content .msm .mensagem .text p:first-child span:nth-child(1):hover{
+        color: var(--Blue);
+    }
+
     .container .content .msm .mensagem .text p:first-child span:nth-child(2){
         color: var(--Grayish_blue);
     }
@@ -147,12 +159,24 @@
         color: var(--Red);
         font-size: 20px;
         margin-left: -5px;
-        padding-top: 15px;
+        /*padding-top: 15px;*/
     }
 
     .container .content .msm .mensagem .text p:last-child{
         font-size: 11px;
         color: var(--Grayish_blue);
         margin-top: -10px;
+    }
+
+    @media (max-width: 520px) {
+        .container .content .msm .mensagem .text p:first-child{
+            font-size: 12px;
+            margin-top: 6px;
+        }
+        .container .content .msm .mensagem{
+            /*width: 100%;*/
+            height: auto;
+            padding: 3px 6px;
+        }
     }
     
